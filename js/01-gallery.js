@@ -30,9 +30,9 @@ function createGalleryImg(galleryItems) {
         if (!event.target.classList.contains("gallery__image")) {
             return;
         }
-        const instanse = basicLightBox.create(
+        const instance = basicLightbox.create(
             `<img src="${event.target.dataset.source}" alt="${event.target.dataset.description}">`
         );
-            instanse.show();
+            instance.show();
     }
 
