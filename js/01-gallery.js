@@ -23,11 +23,11 @@ function createGalleryImg(galleryItems) {
         })
         .join("");
     }
-    galleryCont.addEventListener(`click`, openImg)
+    galleryCont.addEventListener("click", openImg)
     
     function openImg(event) {
         event.preventDefault();
-        if (!event.target.classList.contains("gallery__item")) {
+        if (!event.target.classList.contains("gallery__image")) {
             return;
         }
         const instanse = basicLightBox.create(
